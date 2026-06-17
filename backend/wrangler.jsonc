@@ -1,0 +1,15 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "voicevn-tts-worker",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-01-01",
+
+  // Environment variables (non-secret)
+  "vars": {
+    "TTS_PROVIDER": "mock",
+    "TTS_API_URL": "https://api.external-tts-provider.com/v1/synthesize"
+  }
+
+  // Secrets (set via `npx wrangler secret put TTS_API_KEY`):
+  // - TTS_API_KEY: API credentials for the external TTS provider
+}

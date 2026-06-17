@@ -1,0 +1,21 @@
+{
+  "name": "voicevn-worker",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Vietnamese TTS Cloudflare Worker backend proxy",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "types": "wrangler types"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.8.0",
+    "@cloudflare/workers-types": "^4.20250620.0",
+    "typescript": "^5.8.0",
+    "vitest": "^3.2.0",
+    "wrangler": "^4.19.0"
+  }
+}
